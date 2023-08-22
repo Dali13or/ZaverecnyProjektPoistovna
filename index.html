@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Záverečný projekt/ Poistovacia aplikácia Dalibora Hlaváča" />
+    <meta name="keywords" content="Záverečný projekt, programátor, Dalibor Hlaváč" />
+    <meta name="author" content="Dalibor Hlaváč" />
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <title>Zoznam poistencov</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>App<span>Poistenie</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="aktivne"><a href="index.html">Zoznam poistencov</a></li>
+                <li><a href="oApp.html">O aplikácii</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Pridaj nového poistenca</h2>
+
+    <div class="dotaznik">
+        <div class="dotaznikFlex">
+                <input id="meno" type="text" placeholder="Meno">
+                <input id="priezvisko" type="text" placeholder="Priezvisko">
+        </div>
+        <div class="dotaznikFlex">
+                <input id="vek" type="number" placeholder="Vek">
+                <input id="telefon" type="number" placeholder="Telefón">
+        </div>
+    </div>
+    <div>
+        <button id="potvrd">Ulož poistenca</button>
+    </div>
+
+    <h2>Zoznam poistencov</h2>
+    <div id="poistenciZoznam">
+    <table>
+        <thead>
+            <tr>
+                <th>Priezvisko</th>
+                <th>Meno</th>
+                <th>Vek</th>
+                <th>Telefónne číslo</th>
+            </tr>
+            <tbody id="tabulkaVypis">
+            </tbody>
+        </thead>
+    </table>
+    </div>
+    <footer>
+        Vytvoril &copy;Dalibor Hlaváč, 2023 pre <a href="http://itnetwork.cz">itnetwork.cz</a>
+    </footer>
+    <script src="JS/vytvorPoistenca.js"></script>
+    <script src="JS/pridajPoistenca.js"></script>
+    <script src="JS/obsluha.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+html {
+    background: #414042;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: #414042;
+    background: #F9F9F9;
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 960px;
+    padding: 100px 0 0 0;
+}
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #414042;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-size: 40px 40px;
+}
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #42d00e;
+}
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul a:hover, .aktivne a {
+    border-bottom: 2px solid #42d00e;
+}
+nav ul .aktivne a {
+    color: #42d00e;
+}
+article h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+}
+h2 {
+    margin-left: 5%;
+    font-size: 2em;
+}
+
+footer {
+    margin-top: 5rem;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background: #414042;
+    padding: 50px 0 0 0;
+    clip-path: polygon(0% 105%, 100% 100%, 300% 100%, 0% 0%);
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+.cistic {
+    clear: both;
+}
+p a {
+    color: orange;
+    text-decoration: none;
+}
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: medium;
+}
+#meno, #priezvisko, #vek, #telefon {
+    margin-left: 5%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    max-width: auto;
+    font-size: large;
+}
+#meno:hover, #priezvisko:hover, #vek:hover, #telefon:hover {
+    background-color: #c6fec4;
+}
+#potvrd {
+    padding: 10px;
+    margin-left: 4%;
+    text-transform: uppercase;
+    background-color: #414042;
+    color: #42d00e;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bold;
+}
+#potvrd:hover {
+    background-color: #42d00e;
+    color: #414042;
+}
+.dotaznikFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+table {
+    margin-left: 5%;
+    border-spacing:0;
+    border: 1px solid black;
+    text-align: center;
+    width: 90%;
+}
+table td {
+    border: 1px solid black;
+    font-size: larger;
+}
+thead th {
+    border: 1px solid black;
+    font-size: larger;
+    background-color: #414042;
+    color: #42d00e;
+}
